@@ -8,7 +8,7 @@
       ```
     - for linux <br/>
       ```python 
-        $ sudo python -m venv env
+        $ sudo python3 -m venv env
       ```
 ### 2) activate virtual environment :
   - open cmd and in the repo root (where ```manage.py``` file is exists) : <br/>
@@ -19,7 +19,7 @@
     ```
     - for linux 
     ```python 
-        $ .\env\bin\activate
+        $ sudo .\env\bin\activate
     ```
 ### 3) install packages and dependencies :
   - after activate virtual environment (env) , run the following command :
