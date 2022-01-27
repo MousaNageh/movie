@@ -64,3 +64,19 @@
   - you will get a filter page whish is : 
     - we will see this page <br />
     ![alt text](https://raw.githubusercontent.com/MousaNageh/movie/master/static/images/1.PNG?row=True)
+  - you can filter movies by `` title `` or by `` release date `` or by `` overview  ``   or by any both of then or by all of them 
+  - after that clinic on search button
+
+  - you will get the results like this : 
+    ![alt text](https://raw.githubusercontent.com/MousaNageh/movie/master/static/images/2.PNG?row=True)
+
+### 2) if you want to get api data outside of this app 
+  - you can send get request from any platform you want just use this url 
+    - to filter by title<br />
+     ``` http://127.0.0.1:8000/api/search?title=ourData```<br />
+    - to filter by release date<br />
+     ``` http://127.0.0.1:8000/api/search?date=ourData```<br />
+    - to filter by release overview<br />
+     ``` http://127.0.0.1:8000/api/search?overview=ourData```<br />
+    - you can combine any two of the all of them like this <br />
+    ``` http://127.0.0.1:8000/api/search?overview=ourData&overview=ourData&title=ourData```
