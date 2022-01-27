@@ -17,8 +17,9 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-from movie_app.views import Index
+from movie_app.views import Index,search
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",Index.as_view())
+    path("",Index.as_view()),
+    path("api/search",search),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

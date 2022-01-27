@@ -32,8 +32,25 @@
         $ pip install -r requirements.txt
     ```
 
-### 4) run django server :
+### 4) make migrations :
   - after installing packages and dependencies , run the following command :
+    - for windows 
+    ```python 
+        $ python manage.py makemigrations
+    ```
+    ```python 
+        $ python manage.py migrate
+    ```
+    - for linux 
+    ```python 
+        $ python3 manage.py makemigrations
+    ```
+    ```python 
+        $ python3 manage.py migrate
+    ```
+
+### 5) run django server :
+  - after making migrations , run the following command :
     - for windows 
     ```python 
         $ python manage.py runserver
