@@ -63,4 +63,4 @@
 ### 1) open your browser to url ``` http://127.0.0.1:8000/ ```
   - you will get a filter page whish is : 
     - we will see this page <br />
-    ![alt text](https://github.com/MousaNageh/movie/tree/master/static/images/1.png?raw=true)
+    ![alt text](https://raw.githubusercontent.com/MousaNageh/movie/master/static/images/1.PNG)
