@@ -13,6 +13,18 @@ from .serializers import SearchSerializer
 class Index(TemplateView):
   template_name = "index.html"
 
+class Popularmovies(TemplateView):
+  template_name = "popular.html"
+  
+  def get_context_data(self, **kwargs):
+      
+      context = super().get_context_data(**kwargs)
+      dataSet = pd.read_csv(os.path.join(settings.BASE_DIR, "dataset.csv"))
+      queryData = dataSet.query("vote_average > 8")
+      context["movies"] =json.loads(pd.DataFrame(queryData).to_json(orient ='records'))
+      print(context["movies"])
+      return context
+
 @api_view(["GET"])
 def search(request):
   title = request.GET.get("title","")

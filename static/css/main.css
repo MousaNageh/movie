@@ -3,6 +3,13 @@ body {
     font-family: Sans-serif;
 }
 
+ul,
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 .app-title {
     color: #FFF;
     text-align: center;
@@ -85,4 +92,66 @@ body {
 
 .loader-hidde {
     display: none;
+}
+
+.nav {
+    background: #3498db;
+    height: 60px;
+    /* set same as height & line-height below */
+}
+
+
+/* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+}
+
+.nav li a {
+    padding: 0 40px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+
+.nav li:hover {
+    background: #2c3e50;
+    transition: background .3s;
+}
+
+
+/* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 20%;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #2c3e50;
 }

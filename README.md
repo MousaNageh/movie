@@ -80,3 +80,7 @@
      ``` http://127.0.0.1:8000/api/search?overview=ourData```<br />
     - you can combine any two of them or all of them like this <br />
     ``` http://127.0.0.1:8000/api/search?overview=ourData&overview=ourData&title=ourData```
+
+### 3) you can find the most popular movies 
+  - click on popular movies link 
+    ![alt text](https://raw.githubusercontent.com/MousaNageh/movie/master/static/images/3.PNG?row=True)

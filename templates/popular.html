@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<h2 class="app-title">popular movies </h2>
+<div class="row">
+    {% for movie in movies %}
+    <div class="column">
+        <div class="card">
+            <h3>{{ movie.title }}</h3>
+            <h5>{{ movie.overview }}</h5>
+            <p>relace date : {{ movie.release_date }}</p>
+            <p>rate : {{ movie.vote_average }} / 10 </p>
+        </div>
+    </div>
+    {% endfor %}
+</div> {% endblock content %}
