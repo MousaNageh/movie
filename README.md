@@ -84,3 +84,13 @@
 ### 3) you can find the most popular movies 
   - click on popular movies link 
     ![alt text](https://raw.githubusercontent.com/MousaNageh/movie/master/static/images/3.PNG?row=True)
+
+### 4) you can run test cases by the following commands :
+  - for windows 
+    ```python 
+        $ python manage.py test
+    ```
+  - for linux 
+    ```python 
+        $ python3 manage.py test
+    ```
